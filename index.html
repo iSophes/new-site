@@ -132,7 +132,11 @@
                 <p>has cast the line and is happy that the system works.</p>
               </div>
             </div>
+            <!-- Add Arrows -->
+            
           </div>
+          <div class="swiper-button-next-gallery"></div>
+          <div class="swiper-button-prev-gallery"></div>
         </div>
       </div>
 
@@ -213,7 +217,7 @@
                 <li><a href="https://github.com/isophes"><img src="assets/github.svg"></a></li>
               </ul>
               <br />
-              <p class="white">v1.1.0</p>
+              <p class="white">v1.1.1</p>
             </div>
           </div>
         </div>
@@ -231,31 +235,13 @@
           paginationClickable: true,
           nextButton: '.swiper-button-next-gallery',
           prevButton: '.swiper-button-prev-gallery',
-          spaceBetween: 10,
-          breakpoints: {
-          // when window width is <= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-            pagination: '.swiper-pagination'
-          },
-          // when window width is <= 480px
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 20
-          },
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 30
-          }
-        }
+          spaceBetween: 10
         });
       </script>
 
       <!-- Initialize Client Swiper -->
       <script>
-      var swiper1 = new Swiper('.client-swiper', {
+      var swiper2 = new Swiper('.client-swiper', {
         slidesPerView: 3,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
@@ -281,35 +267,11 @@
           }
         }
       });
-      // Initialize Testimonial Swiper
-      var swiper2 = new Swiper('.testimonial-swiper', {
-        slidesPerView: 3,
-        pagination: '.swiper-pagination',
-        paginationClickable: true,
-        spaceBetween: 30,
-        grabCursor: true,
-        freeMode: true,
-        breakpoints: {
-          // when window width is <= 320px
-          320: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          },
-          // when window width is <= 480px
-          480: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          },
-          // when window width is <= 640px
-          640: {
-            slidesPerView: 1,
-            spaceBetween: 10
-          }
-        }
-      });
       </script>
+
       <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
       <script src="js/jquery.counterup.min.js"></script>
+
       <script>
       // Counterup
       $('.counter').counterUp({
