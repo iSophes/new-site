@@ -54,6 +54,15 @@ img {
   color: #37a7ff;
 }
 
+.white {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1em;
+  position: relative;
+  padding-bottom: 0px;
+}
+
 /* custom box */
 
 .gallery-popup-box {
@@ -430,14 +439,14 @@ h1.boldwhite {
 /* Footer */
 .footer {
   background-color: #37324b;
-  padding: 3em;
+  padding: 1em;
 }
 .footer h1 {
   font-family: 'Montserrat', sans-serif;
   font-weight: 600;
   font-size: 3em;
-  color: #a3a1ac;
-  margin-bottom: 2em;
+  color: #ffffff;
+  margin-bottom: 0.5em;
 }
 .footer h1 span {
   color: #fff;
