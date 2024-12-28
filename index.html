@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+  <title>Sophie's Portfolio</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.png">
+
+  <!-- Bootstrap -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+  <link href="css/bootstrap-theme.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/swiper.min.css">
+  <link href="css/style.css" rel="stylesheet">
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700|Open+Sans:300,400,700" rel="stylesheet">
+
+
+  <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+      <![endif]-->
+    </head>
+    <body>
+      <header class="hero" id="everything">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6 col-md-offset-6 col-xs-12">
+              <nav>
+                <div id="menu-toggle">
+                  <div class="hamburger">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                  <div class="cross">
+                    <span class="line"></span>
+                    <span class="line"></span>
+                  </div>
+                </div>
+                <ul class="main-nav">
+                  <li><a href="#home">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#study">Projects</a></li>
+                  <li><a href="#base">Contact</a></li>
+                </ul>
+              </nav>
+              <!-- <a href="#" class="menu"><img src="assets/menu.png"></a> -->
+              <div class="hero-text" id="home">
+                <h1><span>Hi, I am</span><br>iSophes.</h1>
+                <h3>Software Engineer from the UK</h3>
+                <a href="#about" class="btn btn-lg btn-primary">Know More</a>
+                <ul class="social-links">
+                  <li class="label">Join me here</li>
+                  <li><a href="https://bsky.app/profile/isophes.com"><img src="assets/bluesky.svg"></a></li>
+                  <li><a href="https://github.com/isophes"><img src="assets/github.svg"></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <section class="case-study" id="about">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h1 class="heading purple"><span class="purple">Who am I?</span></h1>
+              <br />
+              <p>I'm a Software Engineer from the UK, with about half a decade's experience in developing tooling and games for the Roblox platform!</p>
+              <br />
+              <p>I've mostly worked as a solo programmer on my projects, however I have worked in teams previously and am open to working in teams.</p>
+              <br />
+              I understand the industry standards, so you can get your projects delivered at the <purple-underlined-p>absolute best quality.</purple-underlined-p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="case-study" id="study">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12">
+              <h4 class="sub-heading">I have worked with some</h4>
+              <h1 class="heading purple"><span class="purple">BIG</span> developers and on some <br><span class="pink">COOL</span> projects!</h1>
+              <!-- Swiper -->
+              <div class="swiper-container client-swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide client-box">
+                    <img src="assets/Meknor.jpg" class="client-logo">
+                    <h3 class="text-left title">Fullstack Programmer</h3>
+                    <p class="text-left tag">Island Tycoon: Feb 2023</p>
+                    <p class="know-more" data-popup="box1"><a href="#island-tycoon">Know More &#8594;</a></p>
+                  </div>
+                  <div class="swiper-slide client-box">
+                    <img src="assets/playverse.svg" class="client-logo">
+                    <h3 class="text-left title" >Software Engineer</h3>
+                    <p class="text-left tag">Playverse Studios: June 2024 - Current</p>
+                    <p class="know-more" data-popup="box2"><a href="#playverse-box">Know More &#8594;</a></p>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- Add Arrows -->
+              <div class="swiper-button-next"></div>
+              <div class="swiper-button-prev"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="popup" id="island-gallery">
+        <div class="gallery-popup-box">
+          <img src="assets/x.svg" alt="Close" class="popup-box-close">
+          <h1 class="boldwhite"> Island Tycoon Gallery </h1>
+          <div class="swiper-container gallery">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide gallery-image">
+                <img src="assets/gallery/island-tycoon/TreeChopping.png" class="galimg"> </img>
+                <p>Image of the tree chopping system in Island Tycoon.</p>
+              </div>
+              <div class="swiper-slide gallery-image">
+                <img src="assets/gallery/island-tycoon/Fishing.png" class="galimg"> </img>
+                <br />
+                <p>This is an image of the fishing system in Island Tycoon, where it shows Sophie</p>
+                <p>has cast the line and is happy that the system works.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="popup" id="box1">
+        <div class="popup-box">
+          <img src="assets/x.svg" alt="Close" class="popup-box-close">
+          <h1>Island Tycoon</h1>
+          <h5 class="heading-purple">Feb 2023 - Feb 2023</h1>
+          <p>
+            This game was a project with <a
+						href="https://www.twitch.tv/Meknor">Meknor</a> and another developer named Barj.
+            
+            <br />
+            <br />
+            Unfortunately, the game was discontinued due to Meknor's burnout and <br /> 
+            I was removed from the dev team due to my age at the time, which was only <br />
+            discussed after I had done some work.
+            <br />
+            <br />
+            <li><a href="#island-gallery" class="know-more" data-popup="island-gallery">Click here for the gallery</a></li>
+          </p>
+           
+        </div>
+      </div>
+
+      <div class="popup" id="box2">
+        <div class="popup-box">
+          <img src="assets/x.svg" alt="Close" class="popup-box-close">
+          <h1>Playverse Studio</h1>
+          <h5 class="heading-purple">June 2024 - Current</h1>
+          <p>This text is a WIP.</p>
+        </div>
+      </div>
+
+      <!-- Statistics -->
+      <section class="stats" id="stats">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4 text-center stat-box">
+              <h1 class="purple"><span class="counter">1000</span>+</h1>
+              <h3>Hours</h3>
+            </div>
+            <div class="col-md-4 text-center stat-box">
+              <h1 class="blue"><span class="counter">30</span>+</h1>
+              <h3>Projects</h3>
+            </div>
+            <div class="col-md-4 text-center stat-box">
+              <h1 class="pink"><span class="counter">3000</span>+*</h1>
+              <h3>Cups of Coffee</h3>
+            </div>
+          </div>
+          <h5>Numbers are approximations</h5>
+          <h5>* I do not drink coffee.</h5>
+        </div>
+      </section>
+
+      <!-- Contact Banner -->
+      <section class="contact-banner" id="base">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12 text-center">
+              <h1>Let's work together!</h1>
+              <a href="https://discord.gg/ucnAvEdZEu" class="btn btn-lg btn-primary">Get in touch now!</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Footer -->
+      <footer>
+        <div class="container-fluid" id="footer">
+          <div class="row footer">
+            <div class="col-md-12 text-center">
+              <base-name>iSophes</base-name>
+              <br />
+
+              <ul class="social-links">
+                <li><a href="https://bsky.app/profile/isophes.com"><img src="assets/bluesky.svg"></a></li>
+                <li><a href="https://github.com/isophes"><img src="assets/github.svg"></a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+      <!-- Some Javascript -->
+      <script src="js/jquery-2.1.1.js"></script>
+      <script src="js/swiper.jquery.min.js"></script>
+      
+      <!-- Gallery -->
+
+      <script>
+        var swiper1 = new Swiper('.gallery', {
+          slidesPerView: 1,
+          paginationClickable: true,
+          nextButton: '.swiper-button-next-gallery',
+          prevButton: '.swiper-button-prev-gallery',
+          spaceBetween: 10,
+          breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+        });
+      </script>
+
+      <!-- Initialize Client Swiper -->
+      <script>
+      var swiper1 = new Swiper('.client-swiper', {
+        slidesPerView: 3,
+        paginationClickable: true,
+        nextButton: '.swiper-button-next',
+        prevButton: '.swiper-button-prev',
+        spaceBetween: 60,
+        // Responsive breakpoints
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+            pagination: '.swiper-pagination'
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 30
+          }
+        }
+      });
+      // Initialize Testimonial Swiper
+      var swiper2 = new Swiper('.testimonial-swiper', {
+        slidesPerView: 3,
+        pagination: '.swiper-pagination',
+        paginationClickable: true,
+        spaceBetween: 30,
+        grabCursor: true,
+        freeMode: true,
+        breakpoints: {
+          // when window width is <= 320px
+          320: {
+            slidesPerView: 1,
+            spaceBetween: 10,
+          },
+          // when window width is <= 480px
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          },
+          // when window width is <= 640px
+          640: {
+            slidesPerView: 1,
+            spaceBetween: 10
+          }
+        }
+      });
+      </script>
+      <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+      <script src="js/jquery.counterup.min.js"></script>
+      <script>
+      // Counterup
+      $('.counter').counterUp({
+        time: 1000
+      });
+
+      // Main Navigation
+      $('#menu-toggle').click(function(){
+        $(this).toggleClass('open'),
+        $('.main-nav').toggleClass('show-it');
+      })
+      </script>
+
+      <script src="js/boxes.js"></script>
+    </body>
+    </html>
