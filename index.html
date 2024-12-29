@@ -29,6 +29,7 @@
       <![endif]-->
     </head>
     <body>
+      
       <header class="hero" id="everything">
         <div class="container">
           <div class="row">
@@ -72,11 +73,11 @@
           <div class="row">
             <div class="col-md-12">
               <h1 class="heading purple"><span class="purple">Who am I?</span></h1>
-              <br />
+              <br>
               <p>I'm a Software Engineer from the UK, with about half a decade's experience in developing tooling and games for the Roblox platform!</p>
-              <br />
+              <br>
               <p>I've mostly worked as a solo programmer on my projects, however I have worked in teams previously and am open to working in teams.</p>
-              <br />
+              <br>
               I understand the industry standards, so you can get your projects delivered at the <purple-underlined-p>absolute best quality.</purple-underlined-p>
             </div>
           </div>
@@ -90,26 +91,26 @@
               <h4 class="sub-heading">I have worked with some</h4>
               <h1 class="heading purple"><span class="purple">BIG</span> developers and on some <br><span class="pink">COOL</span> projects!</h1>
               <!-- Swiper -->
-              <div class="swiper-container client-swiper">
+              <div class="swiper-container client-swiper swiper-container-horizontal">
                 <div class="swiper-wrapper">
-                  <div class="swiper-slide client-box">
+                  <div class="swiper-slide client-box swiper-slide-active" style="width: 286px; margin-right: 60px;">
                     <img src="assets/Meknor.jpg" class="client-logo">
                     <h3 class="text-left title">Fullstack Programmer</h3>
                     <p class="text-left tag">Island Tycoon: Feb 2023</p>
-                    <p class="know-more" data-popup="box1"><a href="#island-tycoon">Know More &#8594;</a></p>
+                    <p class="know-more" data-popup="box1"><a href="#island-tycoon">Know More →</a></p>
                   </div>
-                  <div class="swiper-slide client-box">
+                  <div class="swiper-slide client-box swiper-slide-next" style="width: 286px; margin-right: 60px;">
                     <img src="assets/playverse.svg" class="client-logo">
-                    <h3 class="text-left title" >Software Engineer</h3>
+                    <h3 class="text-left title">Software Engineer</h3>
                     <p class="text-left tag">Playverse Studios: June 2024 - Current</p>
-                    <p class="know-more" data-popup="box2"><a href="#playverse-box">Know More &#8594;</a></p>
+                    <p class="know-more" data-popup="box2"><a href="#playverse-box">Know More →</a></p>
                   </div>
                 </div>
                 
               </div>
               <!-- Add Arrows -->
-              <div class="swiper-button-next"></div>
-              <div class="swiper-button-prev"></div>
+              <div class="swiper-button-next swiper-button-disabled"></div>
+              <div class="swiper-button-prev swiper-button-disabled"></div>
             </div>
           </div>
         </div>
@@ -119,15 +120,15 @@
         <div class="gallery-popup-box">
           <img src="assets/x.svg" alt="Close" class="popup-box-close">
           <h1 class="boldwhite"> Island Tycoon Gallery </h1>
-          <div class="swiper-container gallery">
-            <div class="swiper-wrapper">
-              <div class="swiper-slide gallery-image">
-                <img src="assets/gallery/island-tycoon/TreeChopping.png" class="galimg"> </img>
+          <div class="swiper-container gallery swiper-container-horizontal">
+            <div class="swiper-wrapper" style="transition-duration: 0ms;">
+              <div class="swiper-slide gallery-image swiper-slide-active">
+                <img src="assets/gallery/island-tycoon/TreeChopping.png" class="galimg"> 
                 <p>Image of the tree chopping system in Island Tycoon.</p>
               </div>
-              <div class="swiper-slide gallery-image">
-                <img src="assets/gallery/island-tycoon/Fishing.png" class="galimg"> </img>
-                <br />
+              <div class="swiper-slide gallery-image swiper-slide-next">
+                <img src="assets/gallery/island-tycoon/Fishing.png" class="galimg"> 
+                <br>
                 <p>This is an image of the fishing system in Island Tycoon, where it shows Sophie</p>
                 <p>has cast the line and is happy that the system works.</p>
               </div>
@@ -144,20 +145,19 @@
         <div class="popup-box">
           <img src="assets/x.svg" alt="Close" class="popup-box-close">
           <h1>Island Tycoon</h1>
-          <h5 class="heading-purple">Feb 2023 - Feb 2023</h1>
+          <h5 class="heading-purple">Feb 2023 - Feb 2023</h5>
           <p>
-            This game was a project with <a
-						href="https://www.twitch.tv/Meknor">Meknor</a> and another developer named Barj.
+            This game was a project with <a href="https://www.twitch.tv/Meknor">Meknor</a> and another developer named Barj.
             
-            <br />
-            <br />
-            Unfortunately, the game was discontinued due to Meknor's burnout and <br /> 
-            I was removed from the dev team due to my age at the time, which was only <br />
+            <br>
+            <br>
+            Unfortunately, the game was discontinued due to Meknor's burnout and <br> 
+            I was removed from the dev team due to my age at the time, which was only <br>
             discussed after I had done some work.
-            <br />
-            <br />
-            <li><a href="#island-gallery" class="know-more" data-popup="island-gallery">Click here for the gallery</a></li>
-          </p>
+            <br>
+            <br>
+            </p><li><a href="#island-gallery" class="know-more" data-popup="island-gallery">Click here for the gallery</a></li>
+          <p></p>
            
         </div>
       </div>
@@ -166,7 +166,7 @@
         <div class="popup-box">
           <img src="assets/x.svg" alt="Close" class="popup-box-close">
           <h1>Playverse Studio</h1>
-          <h5 class="heading-purple">June 2024 - Current</h1>
+          <h5 class="heading-purple">June 2024 - Current</h5>
           <p>This text is a WIP.</p>
         </div>
       </div>
@@ -211,13 +211,13 @@
           <div class="row footer">
             <div class="col-md-12 text-center">
               <h1>iSophes</h1>
-              <br />
+              <br>
               <ul class="social-links">
                 <li><a href="https://bsky.app/profile/isophes.com"><img src="assets/bluesky.svg"></a></li>
                 <li><a href="https://github.com/isophes"><img src="assets/github.svg"></a></li>
               </ul>
-              <br />
-              <p class="white">v1.1.2</p>
+              <br>
+              <p class="white">v1.2.0</p>
             </div>
           </div>
         </div>
@@ -286,5 +286,8 @@
       </script>
 
       <script src="js/boxes.js"></script>
+    
+    
+
     </body>
     </html>
