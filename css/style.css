@@ -101,6 +101,16 @@ img {
       }
 }
 
+@keyframes bg-fade {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
+
 /* custom box */
 
 .gallery-popup-box {
@@ -232,6 +242,8 @@ header.hero {
   background-size: cover;
   color: #fff;
   padding-bottom: 80px;
+  animation-name: bg-fade;
+  animation-duration: 1s;
 }
 
 header.hero .hero-text {
