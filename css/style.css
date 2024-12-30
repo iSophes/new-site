@@ -63,6 +63,17 @@ img {
   padding-bottom: 0px;
 }
 
+.gallery-white {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  color: #ffffff;
+  font-size: 1em;
+  padding-bottom: 0px;
+  position: fixed ;
+  align-items: center;
+
+}
+
 /* custom box */
 
 .gallery-popup-box {
@@ -73,6 +84,18 @@ img {
   text-align: center;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
   transition: all 0.2s;
+  max-width: 1000px; 
+  max-height: 80vh; 
+}
+
+.gallery-popup-box h1 {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 700;
+  font-size: larger;
+  color: #ffffff;
+  font-size: 2em;
+  position: relative;
+  top: 10
 }
 
 .popup {
@@ -85,7 +108,7 @@ img {
   display: none;
   justify-content: center;
   align-items: center;
-  z-index: 1000;
+  z-index: 10;
   transition: all 0.2s;
 }
 
@@ -299,18 +322,6 @@ h1.boldwhite {
   transition: all 0.2s;
 }
 
-.gallery-image {
-  background-color: #fff;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.03);
-  padding: 3.5em 1em;
-  border-radius: 5px;
-  border: 1px solid #eee;
-  text-align: center;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
 .client-box:hover{
   -ms-transform: scale(1.15); /* IE 9 */
   -webkit-transform: scale(1.15); /* Safari */
@@ -339,6 +350,7 @@ h1.boldwhite {
   box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
   z-index: 2;
 }
+
 .swiper-button-next, .swiper-button-prev {
   width: 80px;
   height: 80px;
@@ -362,45 +374,52 @@ h1.boldwhite {
   left: -40px;
 }
 
+/* gallery */
 
-
-/* Testimonial */
-.testimonial-box {
-  padding: 2em;
-  color: #fff;
-  border-radius: 5px;
-  font-weight: 300;
-  min-height: 400px;
+.gallery-button-next, .gallery-button-prev {
+  width: 80px;
+  height: 80px;
+  background-size: 80px 80px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  border-radius: 5em;
+  -webkit-transition: all 0.2s;
+  -moz-transition: all 0.2s;
+  transition: all 0.2s;
+  position: relative;
+  top: 110px;
 }
-.testimonial-box h1 {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  margin-top: 0;
-  margin-bottom: 1em;
-}
-.testimonial-box p.name {
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 400;
-  font-size: 1.2em;
-  margin-bottom: 0;
-}
-.testimonial-box p.designation {
-  font-family: 'Montserrat', sans-serif;
-  margin-bottom: 0;
-}
-.testimonial-box.yellow {
-  background-color: #ffbe61;
-}
-.testimonial-box.purple {
-  background-color: #7b32d5;
-}
-.testimonial-box.blue {
-  background-color: #37a7ff;
-}
-.testimonial-box.pink {
-  background-color: #ff2a75;
+.gallery-button-next:hover,
+.gallery-button-prev:hover {
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
 }
 
+.gallery-button-prev{
+  background-image: url(../assets/arrow-left.png);
+  left: -40px;
+}
+
+.gallery-button-next{
+  background-image: url(../assets/arrow-right.png);
+  right: -40px;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+}
+
+.gallery-section {
+  text-align: center;
+}
+
+.image-gallery {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 700px;
+  max-height: 700px;
+}
 
 /* Statistics */
 .stats {
@@ -494,30 +513,6 @@ h1.boldwhite {
 
 /* Gallery Buttons */
 
-.swiper-button-next-gallery, .swiper-button-prev-gallery {
-  width: 80px;
-  height: 80px;
-  background-size: 80px 80px;
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.05);
-  border-radius: 5em;
-  -webkit-transition: all 0.2s;
-  -moz-transition: all 0.2s;
-  transition: all 0.2s;
-}
-
-.swiper-button-next-gallery {
-  background-image: url(../assets/arrow-right.png);
-  right: -40px;
-}
-.swiper-button-prev-gallery {
-  background-image: url(../assets/arrow-left.png);
-  left: -40px;
-}
-
-.swiper-button-next-gallery:hover,
-.swiper-button-prev-gallery:hover {
-  box-shadow: 0 0 40px rgba(0, 0, 0, 0.1);
-}
 
 /* Main navigation */
 nav {
@@ -673,6 +668,10 @@ ul.main-nav.show-it {
   }
   .swiper-button-prev,
   .swiper-button-next {
+    display: none;
+  }
+  .gallery-swiper-button-prev,
+  .gallery-swiper-button-next {
     display: none;
   }
   .swiper-container {

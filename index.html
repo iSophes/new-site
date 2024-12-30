@@ -118,27 +118,36 @@
 
       <div class="popup" id="island-gallery">
         <div class="gallery-popup-box">
+          <h1>Island Tycoon Gallery</h1>
           <img src="assets/x.svg" alt="Close" class="popup-box-close">
-          <h1 class="boldwhite"> Island Tycoon Gallery </h1>
-          <div class="swiper-container gallery swiper-container-horizontal">
-            <div class="swiper-wrapper" style="transition-duration: 0ms;">
-              <div class="swiper-slide gallery-image swiper-slide-active">
-                <img src="assets/gallery/island-tycoon/TreeChopping.png" class="galimg"> 
-                <p>Image of the tree chopping system in Island Tycoon.</p>
-              </div>
-              <div class="swiper-slide gallery-image swiper-slide-next">
-                <img src="assets/gallery/island-tycoon/Fishing.png" class="galimg"> 
-                <br>
-                <p>This is an image of the fishing system in Island Tycoon, where it shows Sophie</p>
-                <p>has cast the line and is happy that the system works.</p>
-              </div>
+          <div class="gallery-section" id="Island-Tycoon-Gallery">
+            <div class="image-gallery">
+                <img id="Island-Tycoon-Gallery-image" src="" alt="">
             </div>
-            <!-- Add Arrows -->
-            
+            <br />
+            <p class="gallery-white" id="Island-Tycoon-Gallery-text"></p>
+
+            <button class="gallery-button-prev" onclick="moveImage('Island-Tycoon-Gallery', 'prev')"></button>
+            <button class="gallery-button-next" onclick="moveImage('Island-Tycoon-Gallery', 'next')"></button>
           </div>
-          <div class="swiper-button-next-gallery"></div>
-          <div class="swiper-button-prev-gallery"></div>
-        </div>
+        </div>        
+      </div>
+
+      <div class="popup" id="playverse-gallery">
+        <div class="gallery-popup-box">
+          <h1>Playverse Gallery</h1>
+          <img src="assets/x.svg" alt="Close" class="popup-box-close">
+          <div class="gallery-section" id="Playverse-Gallery">
+            <div class="image-gallery">
+                <img id="Playverse-Gallery-image" src="" alt="">
+            </div>
+            <br />
+            <p class="gallery-white" id="Playverse-Gallery-text"></p>
+
+            <button class="gallery-button-prev" onclick="moveImage('Playverse-Gallery', 'prev')"></button>
+            <button class="gallery-button-next" onclick="moveImage('Playverse-Gallery', 'next')"></button>
+          </div>
+        </div>        
       </div>
 
       <div class="popup" id="box1">
@@ -168,6 +177,7 @@
           <h1>Playverse Studio</h1>
           <h5 class="heading-purple">June 2024 - Current</h5>
           <p>This text is a WIP.</p>
+          <li><a href="#playverse-gallery" class="know-more" data-popup="playverse-gallery">Click here for the gallery</a></li>
         </div>
       </div>
 
@@ -303,31 +313,41 @@ By using our services, you acknowledge that you have read and understood this Pr
                 <li><a href="https://github.com/isophes"><img src="assets/github.svg"></a></li>
               </ul>
               <br>
-              <p class="white">v1.3.0 | <a href="#privacy" class="know-more" data-popup="privacy">Privacy Policy</a></p>
+              <p class="white">v1.4.0 | <a href="#privacy" class="know-more" data-popup="privacy">Privacy Policy</a></p>
             </div>
           </div>
         </div>
       </footer>
 
       <!-- Some Javascript -->
+      <script src="js/gallery.js"></script>
       <script src="js/jquery-2.1.1.js"></script>
       <script src="js/swiper.jquery.min.js"></script>
       
       <!-- Gallery -->
 
       <script>
-        var swiper1 = new Swiper('.gallery', {
-          slidesPerView: 1,
-          paginationClickable: true,
-          nextButton: '.swiper-button-next-gallery',
-          prevButton: '.swiper-button-prev-gallery',
-          spaceBetween: 10
-        });
+        var swiper1 = new Swiper('.gallery-swiper-container', {
+          loop: true,  // Optional: keeps the gallery looping
+          slidesPerView: 1,  // Display one slide at a time
+          spaceBetween: 10,  // Space between slides (adjust if needed)
+          centeredSlides: true,  // Keeps the current slide centered
+          grabCursor: false,  // Changes cursor to "grab" when hovering over slides
+          navigation: {
+            nextEl: '.gallery-swiper-button-next',
+            prevEl: '.gallery-swiper-button-prev',
+          },
+          breakpoints: {
+            768: {
+              slidesPerView: 1,
+              spaceBetween: 20,
+            }
+          }});
       </script>
 
       <!-- Initialize Client Swiper -->
       <script>
-      var swiper2 = new Swiper('.client-swiper', {
+        var swiper2 = new Swiper('.client-swiper', {
         slidesPerView: 3,
         paginationClickable: true,
         nextButton: '.swiper-button-next',
