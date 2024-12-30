@@ -7,9 +7,9 @@ var currentOpenID = "";
 
 function blur() {
     for (let i = 0; i < content.length; i++){
-      content[i].classList.add('blur');
-      setTimeout(400)
-      content[i].classList.remove('noblur');
+        content[i].classList.add('blur');
+        setTimeout(400)
+        content[i].classList.remove('noblur');
     };
   }
 
