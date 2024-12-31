@@ -26,9 +26,8 @@
       <![endif]-->
     </head>
     <body>
-      
-      
       <header class="hero" id="everything">
+
         <div class="container">
           <div class="row">
             <div class="col-md-6 col-md-offset-6 col-xs-12">
@@ -94,7 +93,7 @@
                 <div class="swiper-wrapper">
                   <div class="swiper-slide client-box swiper-slide-active" style="width: 286px; margin-right: 60px;">
                     <img src="assets/Meknor.jpg" class="client-logo">
-                    <h3 class="text-left title">Fullstack Programmer</h3>
+                    <h3 class="text-left title">Back-end Programmer</h3>
                     <p class="text-left tag">Island Tycoon: Feb 2023</p>
                     <p class="know-more" data-popup="box1"><a href="#island-tycoon">Know More →</a></p>
                   </div>
@@ -219,15 +218,15 @@
         <div class="container">
           <div class="row">
             <div class="col-md-4 text-center stat-box">
-              <h1 class="purple"><span class="counter">1000</span>+</h1>
+              <h1 class="purple"><span class="counter-purple">1000</span>+</h1>
               <h3>Hours</h3>
             </div>
             <div class="col-md-4 text-center stat-box">
-              <h1 class="blue"><span class="counter">30</span>+</h1>
+              <h1 class="blue"><span class="counter-blue">30</span>+</h1>
               <h3>Projects</h3>
             </div>
             <div class="col-md-4 text-center stat-box">
-              <h1 class="pink"><span class="counter">3000</span>+*</h1>
+              <h1 class="pink"><span class="counter-pink">3000</span>+*</h1>
               <h3>Cups of Coffee</h3>
             </div>
           </div>
@@ -339,7 +338,12 @@ By using our services, you acknowledge that you have read and understood this Pr
         <div class="popup-box">
           <img src="assets/x.svg" alt="Close" class="popup-box-close">
           <h1>Changelog</h1>
-          <br>
+          <br />
+          <h3>BETA v1.5.2</h3>  
+          <br />
+          <li>Added new background</li>
+          <li>Added custom highlight colours for different parts of page</li>
+          <br />  
           <h3>BETA v1.5.1</h3>  
           <br />
           <li>Added a fade to background when site loads</li>
@@ -405,7 +409,7 @@ By using our services, you acknowledge that you have read and understood this Pr
                 <li><a href="https://twitch.tv/isophes"><img src="assets/logo-twitch.svg"></a></li>
               </ul>
               <br>
-              <p class="white">BETA v1.5.1 | <a href="#privacy" class="know-more" data-popup="privacy">Privacy Policy</a> | <a href="#changelogs" class="know-more" data-popup="changelogs">Changelogs</a></p>
+              <p class="white">BETA v1.5.2 | <a href="#privacy" class="know-more" data-popup="privacy">Privacy Policy</a> | <a href="#changelogs" class="know-more" data-popup="changelogs">Changelogs</a></p>
             </div>
           </div>
         </div>
@@ -452,7 +456,13 @@ By using our services, you acknowledge that you have read and understood this Pr
 
       <script>
       // Counterup
-      $('.counter').counterUp({
+      $('.counter-purple').counterUp({
+        time: 1000
+      });
+      $('.counter-blue').counterUp({
+        time: 1000
+      });
+      $('.counter-pink').counterUp({
         time: 1000
       });
 

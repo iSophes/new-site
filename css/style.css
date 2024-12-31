@@ -6,6 +6,10 @@ html {
   scroll-behavior: smooth;
 }
 
+::selection{
+  background: #7447ae;
+  color: #ffffff;
+}
 
 body {
   font-family: 'Open Sans', sans-serif;
@@ -48,11 +52,43 @@ img {
 .purple {
   color: #7447ae;
 }
+
+.purple::selection {
+  background: #7447ae;
+  color: #ffffff 
+}
+
+.counter-purple::selection{
+  background: #7447ae;
+  color: #ffffff
+}
+
 .pink {
   color: #ff2a75;
 }
+
+.pink::selection {
+  background: #ff2a75;
+  color: #ffffff 
+}
+
+.counter-pink::selection{
+  background: #ff2a75;
+  color: #ffffff
+}
+
 .blue {
   color: #37a7ff;
+}
+
+.counter-blue::selection{
+  background: #37a7ff;
+  color: #ffffff
+}
+
+.blue::selection {
+  background: #37a7ff;
+  color: #ffffff 
 }
 
 .white {
@@ -234,8 +270,9 @@ purple-underlined-p {
 }
 
 /* Hero Section */
+
 header.hero {
-  background: url(../assets/new-bg.jpg) no-repeat center center fixed;
+  background: url(../assets/test-bg.png) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -244,6 +281,7 @@ header.hero {
   padding-bottom: 80px;
   animation-name: bg-fade;
   animation-duration: 1s;
+  
 }
 
 header.hero .hero-text {
@@ -345,6 +383,7 @@ h1.heading:after {
 h1.heading.purple:after {
   background-color: #7447ae;
 }
+
 h1.heading.pink:after {
   background-color: #ff2a75;
 }
