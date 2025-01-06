@@ -5,7 +5,7 @@ const galleryData = {
         'assets/gallery/island-tycoon/TycoonClaiming.png'
     ],
     "Playverse-Gallery": [
-        'assets/gallery/playverse/test.jpeg'
+        'assets/gallery/playverse/presidents-shop.png'
     ]
 };
 
@@ -16,7 +16,7 @@ const altTexts = {
         'Claiming a tycoon!'
     ],
     "Playverse-Gallery": [
-        'This is a test text!',
+        'The shop + UI of Presidents! It is all fully functional and is powered by Fusion\n0.3 by Elttob.',
     ]
 }
 

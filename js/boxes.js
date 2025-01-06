@@ -1,5 +1,6 @@
 // Select all "know more" buttons
 const knowMoreButtons = document.querySelectorAll('.know-more');
+const clientBoxes = document.querySelectorAll('.client-box');
 const popups = document.querySelectorAll('.popup');
 const content = [document.getElementById('everything'), document.getElementById('about'), document.getElementById('study'), document.getElementById('stats'), document.getElementById('base'), document.getElementById('footer')];
 
@@ -41,6 +42,15 @@ function closeAllPopups() {
 }
 
 // Add event listeners to "know more" buttons
+
+clientBoxes.forEach((box) => {
+    box.addEventListener('click', () => {
+        const popupId = box.getAttribute('data-popup'); // Get the target popup ID
+        closeAllPopups(); // Close any open popup
+        openPopup(popupId); // Open the selected popup
+    });
+})
+
 knowMoreButtons.forEach((button) => {
     button.addEventListener('click', () => {
         const popupId = button.getAttribute('data-popup'); // Get the target popup ID

@@ -108,7 +108,7 @@ img {
   padding-bottom: 0px;
   position: fixed ;
   align-items: center;
-
+  text-wrap-mode: wrap;
 }
 
 @keyframes Top {
@@ -477,8 +477,8 @@ h1.boldwhite {
 .gallery-button-next, .gallery-button-prev {
   width: 80px;
   height: 80px;
-  background-size: 80px 80px;
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.1);
+  background-size: 75px 75px;
+  box-shadow: 0 0 40px rgba(255, 255, 255, 0.5);
   border-radius: 5em;
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -488,16 +488,16 @@ h1.boldwhite {
 }
 .gallery-button-next:hover,
 .gallery-button-prev:hover {
-  box-shadow: 0 0 40px rgba(255, 255, 255, 0.25);
+  box-shadow: 0 0 40px rgba(56, 52, 52, 0.25);
 }
 
 .gallery-button-prev{
-  background-image: url(../assets/arrow-left.png);
+  background-image: url(../assets/arrow-left.svg);
   left: -40px;
 }
 
 .gallery-button-next{
-  background-image: url(../assets/arrow-right.png);
+  background-image: url(../assets/arrow-right.svg);
   right: -40px;
 }
 
@@ -708,7 +708,7 @@ ul.main-nav li a {
   padding: 5px 15px;
 }
 ul.main-nav li a:hover {
-  color: #ffbe61;
+  color: #7447ae;
 }
 ul.main-nav.show-it {
   opacity: 1;
