@@ -285,10 +285,10 @@ purple-underlined-p {
 
 header.hero {
   background: url(../assets/test-bg.png) no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: auto;
+  -moz-background-size: auto;
+  -o-background-size: auto;
+  background-size: auto;
   color: #fff;
   padding-bottom: 80px;
   animation-name: bg-fade;
